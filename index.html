@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style1.css">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="app-header">
+            <div>
+                <p class="eyebrow">WEATHER APP</p>
+                <h1>Weather<span>.</span></h1>
+            </div>
+
+            <div class="weather-badge">Live Weather</div>
+        </div>
+
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter city name..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn" aria-label="Search weather">
+                🔍
+            </button>
+        </div>
+
+
+        <p class="error" id="errorMessage"></p>
+
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Getting weather...</p>
+        </div>
+
+
+        <section class="weather-content" id="weatherContent">
+
+            <div class="location">
+                <span>📍</span>
+                <h2 class="city">Lahore</h2>
+            </div>
+
+
+            <div class="main-weather">
+
+                <div class="weather-icon" id="weatherIcon">
+                    ☀️
+                </div>
+
+                <div class="temperature">
+                    <h1 class="temp">--°</h1>
+                    <p class="condition">Clear</p>
+                </div>
+
+            </div>
+
+
+            <div class="feels">
+                Feels like <strong id="feelsLike">--°C</strong>
+            </div>
+
+
+            <div class="details">
+
+                <div class="detail-card">
+                    <div class="detail-icon">💧</div>
+                    <div>
+                        <p>Humidity</p>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+                </div>
+
+
+                <div class="detail-card">
+                    <div class="detail-icon">💨</div>
+                    <div>
+                        <p>Wind Speed</p>
+                        <h3 id="wind">-- km/h</h3>
+                    </div>
+                </div>
+
+
+                <div class="detail-card">
+                    <div class="detail-icon">🌡️</div>
+                    <div>
+                        <p>Pressure</p>
+                        <h3 id="pressure">-- hPa</h3>
+                    </div>
+                </div>
+
+
+                <div class="detail-card">
+                    <div class="detail-icon">👁️</div>
+                    <div>
+                        <p>Visibility</p>
+                        <h3 id="visibility">-- km</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>Powered by Open-Meteo</p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
