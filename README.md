@@ -6,7 +6,7 @@ Users can search for a city and view temperature, humidity, wind speed, and weat
 
 ## 🚀 Live Demo
 
-[Play Guess Number Game](https://nadeemmanj.github.io/Weather-App/)
+[Play Weather App](https://nadeemmanj.github.io/Weather-App/)
 
 ## 🛠️ Technologies
 
